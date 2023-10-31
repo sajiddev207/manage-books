@@ -1,0 +1,35 @@
+@PORT = http://localhost:8080/api
+
+### Add book
+POST {{PORT}}/addBook
+Content-Type: application/json
+
+{
+    "title":"a1",
+    "author":"someone",
+    "summary":"fdsahkjfhsajkhl"
+}
+
+### Update book
+PUT {{PORT}}/updateBook
+Content-Type: application/json
+
+{
+    "id":"653f9a1ca583d6e3568edb8b",
+    "title":"a1",
+    "author":"someone",
+    "summary":"fdsahkjfhsajkhl"
+}
+
+### Delete book
+DELETE {{PORT}}/deleteBook/653f9a1ca583d6e3568edb8b
+Content-Type: application/json
+
+
+### Fetch book
+GET {{PORT}}/getAllBookList
+Content-Type: application/json
+
+### Fetch book by id
+GET {{PORT}}/getBookByBookId/653f9a1ca583d6e3568edb8b
+Content-Type: application/json
