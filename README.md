@@ -57,6 +57,20 @@ To set up this project locally, follow these steps:
 
 Now, you can access and test the Book Management API on your local server.
 
+## Live on server also 
+
+1. make account on amazon it provide us free server for some time
+2. after that set the password and open it on terminal 
+3. install nginx, node, mongodb into server 
+4. clone the git repo into it intall the dependencies with npm i after that make .env file into it same describe above. 
+5. pm2 start app.js ( when port is not allow where your project is running than allow it from setting of amazon website where you create account)
+
+
+**live url = http://34.236.146.248:8080/api/${endpoint}**
+
+
+
+
 ## Dependencies Used
 
 This project utilizes the following dependencies:
